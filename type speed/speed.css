@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right top, #0c0c23, #970c72);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+}
+button {
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 5px 15px;
+}
+select {
+  width: 200px;
+  padding: 5px;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  background-color: #e3a7e1;
+}
+
+select:focus,
+button:focus {
+  outline: 0;
+}
+.settings-btn {
+  position: absolute;
+  bottom: 3px;
+  left: 3px;
+}
+
+.settings {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #0c0c23;
+  height: 50px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.settings.hide {
+  transform: translateY(-100%);
+}
+
+.container {
+  background-color: white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 225, 225, 0.989),
+    rgba(255, 255, 255, 0.3)
+  );
+  backdrop-filter: blur(1rem);
+  padding: 0px;
+  border-radius: 6px;
+  box-shadow: 0 3px 5px rgba(147, 20, 62, 0.868);
+  position: relative;
+  text-align: center;
+  width: 500px;
+  color: #5d052a;
+}
+.container h2 {
+  background: linear-gradient(to right top, #191937, #d2266b);
+  color: #191937;
+  padding: 8px;
+  margin: 20px 20px 40px 20px;
+  border-radius: 6px;
+}
+h1 {
+  margin: 0;
+}
+
+.time-container {
+  margin-top: 10px;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+}
+
+.score-container {
+  margin-top: 10px;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+}
+
+input {
+  color: rgb(215, 125, 7);
+  border: 0;
+  border-radius: 4px;
+  font-size: 14px;
+  width: 300px;
+  padding: 12px 20px;
+  margin-top: 10px;
+  outline: none;
+}
+
+#word {
+  color: rgb(96, 13, 5);
+  margin: 20px;
+}
+
+.end-game-container {
+  background-color: #0c0c23;
+  color: #d2266b;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
